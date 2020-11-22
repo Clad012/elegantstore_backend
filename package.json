@@ -1,0 +1,28 @@
+{
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Achraf Chaibi",
+    "url": ""
+  },
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "build": "rm -rf build && tsc -p .",
+    "typeorm:cli": "ts-node ./node_modules/typeorm/cli -f ./src/ormconfig.ts"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pg": "^8.5.1",
+    "typeorm": "^0.2.29",
+    "typescript-rest": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/node": "^14.14.9",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  }
+}
